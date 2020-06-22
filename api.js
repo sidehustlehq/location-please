@@ -173,15 +173,3 @@ exports.using_ip_stack = function (options) {
 	})
 
 }
-
-// exports.using_ip_api({detailed_logs: true, ip: "219.91.230.38"}).then((res) => {
-//     console.log("ip_api => ", res)
-// }).catch((err) => {
-//     console.error("err=>", err)
-// })
-
-// exports.using_ip_locate({detailed_logs: true, ip: "219.91.230.38"}).then((res) => {
-//     console.log("ip_locate => ", res)
-// }).catch((err) => {
-//     console.error("err=>", err)
-// })

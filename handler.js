@@ -97,17 +97,3 @@ function union(setA, setB) {
     }
     return _union
 }
-
-
-// exports.apiHandler({
-// 	detailed_logs: true, 
-// 	ip: "219.91.230.38",
-// 	data_needed: {
-// 		city: 1,
-// 		country: 1,
-// 		latitude: 1,
-// 		longitude: 1,
-// 		country_code: 1,
-// 	},
-// 	priorities: ["IP_STACK"]
-// })
