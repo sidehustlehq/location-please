@@ -1,6 +1,6 @@
 const all_api = require('./api.js')
 
-exports.apiHandler = async function(options) {
+exports.get_details = async function(options) {
 
 	/*
 
@@ -30,8 +30,6 @@ exports.apiHandler = async function(options) {
 	}
 
 	detailed_logs: true, default = false.	
-	distinct_id: If required for debugging purposes.
-
 
 	*/
 
