@@ -2,17 +2,11 @@
 
 Currently using 3 API to get location of the IP.
 
-[IP_LOCATE](https://www.iplocate.io/)
+[IP_LOCATE](https://www.iplocate.io/) ==> This api provides 1000 free requests everyday.
 
-This api provides 1000 free requests everyday.
+[IP_API](https://ipapi.co/) ==> This api provides 1000 free requests everyday.
 
-[IP_API](https://ipapi.co/)
-
-This api provides 1000 free requests everyday.
-
-[IP_STACK](https://ipstack.com/) 
-
-This api provides 10,000 free requests per month. *Requires API KEY.
+[IP_STACK](https://ipstack.com/) ==> This api provides 10,000 free requests per month. (Note: *Requires API KEY)
 
 Using the API's in the above order itself, we will first try to get Location from IP_LOCATE then IP_API and then IP_STACK. By default, until we get the details all 3 api will be requested. We may restrict to one of the API or change the order as required. This will work in fall back mechanism.
 
@@ -136,5 +130,3 @@ LocationPlease.get_details({
     console.error("ERROR: ", error)
 })
 ```
-
-In this case, if "IP_API" fails, no fallback api will be used.
