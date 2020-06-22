@@ -10,12 +10,16 @@ Currently using 3 API to get location of the IP.
 
 Using the API's in the above order itself, we will first try to get Location from IP_LOCATE then IP_API and then IP_STACK. By default, until we get the details all 3 api will be requested. We may restrict to one of the API or change the order as required. This will work in fall back mechanism.
 
+## Installation
+
+``` npm install location-please ```
+
 ## Sending a simple request
 
 Function will automatically try the API & get you the all the possible data from the api.
 
 ```
-const LocationPlease = require('./location_please.js.js')
+const LocationPlease = require('location-please')
 
 LocationPlease.get_details({
     ip: "8.8.8.8"
@@ -31,7 +35,7 @@ LocationPlease.get_details({
 Function will automatically try the API & get you the all the required data from the api.
 
 ```
-const LocationPlease = require('./location_please.js.js')
+const LocationPlease = require('location-please')
 
 LocationPlease.get_details({
     ip: "8.8.8.8",
@@ -52,7 +56,7 @@ So in the above code, first "IP_API" will be requested, if it fails "IP_LOCATE" 
 Function will automatically try the API & get you the all the required data from the api.
 
 ```
-const LocationPlease = require('./location_please.js.js')
+const LocationPlease = require('location-please')
 
 LocationPlease.get_details({
     ip: "8.8.8.8",
@@ -78,7 +82,7 @@ LocationPlease.get_details({
 Function will automatically try the API & get you the all the required data from the api.
 
 ```
-const LocationPlease = require('./location_please.js.js')
+const LocationPlease = require('location-please')
 
 LocationPlease.get_details({
     ip: "8.8.8.8",
@@ -107,7 +111,7 @@ In this case, if "IP_API" fails, no fallback api will be used.
 Function will automatically try the API & get you the all the required data from the api.
 
 ```
-const LocationPlease = require('./location_please.js.js')
+const LocationPlease = require('location-please')
 
 LocationPlease.get_details({
     ip: "8.8.8.8",
